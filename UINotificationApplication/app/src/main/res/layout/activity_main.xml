@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Notification"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onStartClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Notification"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onCancelClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Notification"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onUpdateClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Notification with\nMultiple contents"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onMultipleCLick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UI Listening"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onListeningClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Designing View"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onViewDesignClick"/>
+</LinearLayout>

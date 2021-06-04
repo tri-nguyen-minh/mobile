@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnApple"
+        style="@style/btn_style"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Change Orientation"
+        android:onClick="onChangeOrientationCLick"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnBanana"
+        style="@style/btn_style"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Create UI Programming"
+        android:onClick="onCreateUICLick"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnMango"
+        style="@style/btn_style"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="View Flipper"
+        android:onClick="onFlipperClick"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnOrange"
+        style="@style/btn_style"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Sliding Drawer Demo"
+        android:onClick="onSlideClick"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnDurian"
+        style="@style/btn_style"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Navigation Drawer"
+        android:onClick="onNavigateCligk"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnManual"
+        style="@style/btn_style"
+        android:onClick="onManualClick"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Manage Screen Configuration"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAnchor"
+        style="@style/btn_style"
+        android:onClick="onAnchorClick"
+        android:padding="0sp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:text="Anchor View"
+        android:textSize="14sp" />
+</LinearLayout>

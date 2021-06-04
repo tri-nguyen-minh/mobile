@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatingActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnReturnFromAdd"
+            android:text="Call Other Activity"
+            style="@style/generalBtn"
+            android:onClick="onClickBtnReturnFromAdd"/>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Total Calculation"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="5dp"
+                android:text="1st Number :"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/editNum1"
+                style="@style/NumberStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="5dp"
+                android:text="2nd Number :"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/editNum2"
+                style="@style/NumberStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAddError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#E10707"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/calculatingBtn"
+                android:onClick="onClickBtnAdd"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                style="@style/calculatingBtn"
+                android:onClick="onClickBtnSubtract"
+                android:text="Subtract" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp">
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/calculatingBtn"
+                android:onClick="onClickBtnMultiply"
+                android:text="Multiply" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/calculatingBtn"
+                android:onClick="onClickBtnDivide"
+                android:text="Divide" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/button_date_default">
+
+    <TextView
+        style="@style/HeaderStyle"
+        android:layout_height="119dp"
+        android:text="Confirm Message" />
+
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Confirm Message"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>

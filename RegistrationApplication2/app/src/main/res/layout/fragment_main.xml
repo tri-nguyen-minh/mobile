@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:text="Registration Form"
+        style="@style/HeaderStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/layoutInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/input_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Username"
+                android:selectAllOnFocus="true"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editFull"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/fullName"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Gender"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/chkMale"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text="Male"
+                    android:textSize="20sp"
+                    android:textColor="#80000000"
+                    android:onClick="onclickChkMale" />
+
+                <CheckBox
+                    android:id="@+id/chkFemale"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textSize="20sp"
+                    android:textColor="#80000000"
+                    android:onClick="onclickChkFemale"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Marital Status"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rdoStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <RadioButton
+                        android:id="@+id/btnSingle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Single"
+                        android:textColor="#80000000"
+                        android:textSize="20sp" />
+                    <RadioButton
+                        android:id="@+id/btnMarried"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Married"
+                        android:textSize="20sp"
+                        android:textColor="#80000000" />
+                    <RadioButton
+                        android:id="@+id/btnDivorced"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Divorced"
+                        android:textSize="20sp"
+                        android:textColor="#80000000" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Birthday"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/inputBirthday"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_date_default"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onclickChangeDate"
+                    android:text="dd/mm/yyyy"
+                    android:textColor="#80000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Nationality"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spnNationality"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Experience"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/skbExp"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:max="20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Java Knowledge"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/tglJava"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_date_default"
+                    android:hint="Java Knowledge"
+                    android:textColor="#80000000"
+                    android:textOff="No"
+                    android:textOn="Yes"
+                    android:textSize="20sp"
+
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Rating"
+                    android:gravity="center|left"
+                    android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:numStars="5" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="132dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="REGISTER"
+                android:textSize="20sp"
+                android:onClick="onclickRegister"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

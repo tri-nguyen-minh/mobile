@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <Button
+        android:id="@+id/btnShowGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Pictures on Gallery"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onShowPicGalClick"/>
+
+    <Button
+        android:id="@+id/btnSlideGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide Pictures on Gallery"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onSlidePicGalClick"/>
+
+    <Button
+        android:id="@+id/btnShowGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Pictures on Grid"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onShowPicGridClick"/>
+
+    <Button
+        android:id="@+id/btnContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Context Menu"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Clock"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onClockClick"/>
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Web View"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:onClick="onWebClick"/>
+</LinearLayout>

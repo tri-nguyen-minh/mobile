@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnApple"
+        style="@style/btn_style"
+        android:text="Change Orientation"
+        android:onClick="onChangeOrientationCLick"/>
+
+    <Button
+        android:id="@+id/btnBanana"
+        style="@style/btn_style"
+        android:text="Create UI Programming"
+        android:onClick="onCreateUICLick"/>
+
+    <Button
+        android:id="@+id/btnMango"
+        style="@style/btn_style"
+        android:text="View Flipper"
+        android:onClick="onFlipperClick"/>
+
+    <Button
+        android:id="@+id/btnOrange"
+        style="@style/btn_style"
+        android:text="Sliding Drawer Demo"
+        android:onClick="onSlideClick"/>
+
+    <Button
+        android:id="@+id/btnDurian"
+        style="@style/btn_style"
+        android:text="Navigation Drawer"
+        android:onClick="onNavigateCligk"/>
+
+    <Button
+        android:id="@+id/btnManual"
+        style="@style/btn_style"
+        android:text="Manage Screen Configuration"
+        android:onClick="onManualClick"/>
+
+    <Button
+        android:id="@+id/btnAnchor"
+        style="@style/btn_style"
+        android:onClick="onAnchorClick"
+        android:text="Anchor View" />
+</LinearLayout>

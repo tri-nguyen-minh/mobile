@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".InputActivity">
+
+<EditText
+    android:id="@+id/editInputText"
+    android:layout_width="285dp"
+    android:layout_height="36dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/btnInput"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lblInput"
+    app:layout_constraintVertical_bias="0.733" />
+
+<Button
+    android:id="@+id/btnDone"
+    android:layout_width="117dp"
+    android:layout_height="51dp"
+    android:onClick="onClickBtnDone"
+    android:text="Done"
+    app:layout_constraintBottom_toTopOf="@+id/lblDisplay"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.282"
+    app:layout_constraintStart_toEndOf="@+id/btnInput"
+    app:layout_constraintTop_toBottomOf="@+id/editInputText"
+    app:layout_constraintVertical_bias="0.185" />
+
+<TextView
+    android:id="@+id/lblDisplay"
+    android:layout_width="287dp"
+    android:layout_height="82dp"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.508"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnInput"
+    app:layout_constraintVertical_bias="0.051" />
+
+<TextView
+    android:id="@+id/lblInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Type Your Name"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@+id/btnInput"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.268"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.459" />
+
+<Button
+    android:id="@+id/btnInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="onClickBtnInput"
+    android:text="Display Name"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.237"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.226" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

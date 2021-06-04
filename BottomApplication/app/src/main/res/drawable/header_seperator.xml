@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <item android:drawable="@drawable/border_outer" />
+    <item android:drawable="@drawable/border_inner"
+        android:id="@+id/background_navigation"
+        android:bottom="5dp" />
+
+</layer-list>

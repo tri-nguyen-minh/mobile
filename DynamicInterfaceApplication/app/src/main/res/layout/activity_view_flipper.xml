@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".ViewFlipperActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linerLayout">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EF6969"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFlip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flipper content 1"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E6F17C"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFlip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flipper content 2"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#79B9EC"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFlip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flipper content 3"
+                    android:textSize="20sp"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linerLayout"
+        android:layout_width="369dp"
+        android:layout_height="102dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Previous"
+            android:onClick="onPreviousClick"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Next"
+            android:onClick="onNextClick" />
+
+        <Button
+            android:id="@+id/btnAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Auto"
+            android:onClick="onAutoClick"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

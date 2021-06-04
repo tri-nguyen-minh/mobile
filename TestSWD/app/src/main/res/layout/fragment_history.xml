@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:gravity="center|top"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:gravity="center"
+        android:text="Calculation History"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

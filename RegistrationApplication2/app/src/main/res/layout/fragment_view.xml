@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    tools:context=".DisplayActivity">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        style="@style/HeaderStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="User Information" />
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/input_border"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Username : " />
+
+            <TextView
+                android:id="@+id/txtUsername"
+                style="@style/inputDisplay"
+                android:text="Username" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Full Name : " />
+
+            <TextView
+                android:id="@+id/txtFull"
+                style="@style/inputDisplay"
+                android:text="Full" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Password : " />
+
+            <TextView
+                android:id="@+id/txtPass"
+                style="@style/inputDisplay"
+                android:text="Pass" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Gender : " />
+
+            <TextView
+                android:id="@+id/txtGender"
+                style="@style/inputDisplay"
+                android:text="Gender" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Marital Status : " />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                style="@style/inputDisplay"
+                android:text="status" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Birthday : " />
+
+            <TextView
+                android:id="@+id/txtBirthday"
+                style="@style/inputDisplay"
+                android:text="dd/mm/yyyy" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Nationality : " />
+
+            <TextView
+                android:id="@+id/txtNationality"
+                style="@style/inputDisplay"
+                android:text="nationality" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Experience : " />
+
+            <TextView
+                android:id="@+id/txtExperience"
+                style="@style/inputDisplay"
+                android:text="EXP" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Java : " />
+
+            <TextView
+                android:id="@+id/txtJava"
+                style="@style/inputDisplay"
+                android:text="JV" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/viewLinear">
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="Rating : " />
+
+            <TextView
+                android:id="@+id/txtRating"
+                style="@style/inputDisplay"
+                android:text="rate" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layoutConfirm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="Your Registration will expire in:"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+        <NumberPicker
+            android:id="@+id/nbpYear"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_date_default"/>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textSize="20sp"
+                android:onClick="onclickConfirm"/>
+
+            <Button
+                android:id="@+id/btnWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Website"
+                android:textSize="20sp"
+                android:onClick="onclickViewWebsite"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onclickBack"
+                android:text="Back"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
