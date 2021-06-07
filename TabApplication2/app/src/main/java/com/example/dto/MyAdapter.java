@@ -28,9 +28,6 @@ public class MyAdapter extends FragmentPagerAdapter {
             case 1:
                 HistoryFragment historyFragment = new HistoryFragment();
                 return historyFragment;
-//            case 2:
-//                NBA nbaFragment = new NBA();
-//                return nbaFragment;
             default:
                 return null;
         }

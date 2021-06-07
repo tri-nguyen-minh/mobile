@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">BottomNavApplication</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_task">Ongoing Task</string>
-</resources>

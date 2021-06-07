@@ -19,7 +19,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="145dp"
         android:layout_marginBottom="100dp">
 
         <TextView
@@ -31,7 +31,7 @@
         <SlidingDrawer
             android:id="@+id/sliding"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="142dp"
             android:content="@id/content1"
             android:handle="@id/btnHandle1"
             android:orientation="vertical">
