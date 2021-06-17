@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:onClick="onSendSMS"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS using Intent"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:onClick="onSendSMSIntent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS + Get Feedback"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:onClick="onSMSFeedBack"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:onClick="onSendEmail"/>
+
+
+    <TextView
+        android:id="@+id/txtSMSMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:onClick="onSendEmail"/>
+
+
+
+
+</LinearLayout>

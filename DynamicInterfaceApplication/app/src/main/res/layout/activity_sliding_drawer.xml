@@ -31,19 +31,20 @@
         <SlidingDrawer
             android:id="@+id/sliding"
             android:layout_width="match_parent"
-            android:layout_height="142dp"
+            android:layout_height="match_parent"
             android:content="@id/content1"
             android:handle="@id/btnHandle1"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnHandle1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Handle" />
+                <Button
+                    android:id="@+id/btnHandle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handle" />
 
             <LinearLayout
                 android:id="@+id/content1"
+                android:background="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical">
@@ -60,11 +61,13 @@
                     android:layout_height="wrap_content"
                     android:text="Button 2" />
 
-                <Button
-                    android:id="@+id/btnMain3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button 3" />
+
+                    <Button
+                        android:id="@+id/btnMain3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Button 3" />
+
 
                 <TextView
                     android:id="@+id/txt3"

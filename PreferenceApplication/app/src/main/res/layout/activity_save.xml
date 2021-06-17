@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSaveInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save File to Internal Storage"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:onClick="btnSaveInternal"/>
+
+    <Button
+        android:id="@+id/btnLoadInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load File from Internal Storage"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:onClick="btnLoadInternal"/>
+
+    <Button
+        android:id="@+id/btnSaveExternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save File to External Storage"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:onClick="btnSaveExternal"/>
+
+    <Button
+        android:id="@+id/btnLoadExternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load File from External Storage"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:onClick="btnLoadExternal"/>
+
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy File\n/data/data folder to SDCard"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:onClick="btnCopy"/>
+
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+</LinearLayout>

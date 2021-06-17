@@ -17,19 +17,32 @@
         android:layout_margin="10dp"/>
 
     <Gallery
+        android:visibility="gone"
         android:id="@+id/galery1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:padding="10dp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/black"/>
 
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:textSize="20sp"
         android:padding="10dp"
         android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="previous"
+        android:text="Previous"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:text="Next"/>
 
 </LinearLayout>
